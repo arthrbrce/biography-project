@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Kim Arthur's Biography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #333;
+        }
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .profile img {
+            border-radius: 50%;
+            margin-right: 2rem;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #007bff;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 0.5rem;
+            font-size: 1.25rem;
+            color: #333;
+        }
+        .card p {
+            margin: 0.5rem;
+            color: #666;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+        }
+        .button-container button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .edit-btn {
+            background-color: #ffc107; /* Yellow */
+            color: white;
+        }
+        .delete-btn {
+            background-color: #dc3545; /* Red */
+            color: white;
+        }
+        footer {
+            background-color: #ffffff;
+            color: #333;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arthur's Biography</h1>
+    </header>
+ <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#attainments">Attainments</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#blog">Comments</a>
+    </nav>
+    <div class="container">
+        <section id="introduction">
+            <h2 class="section-title">Introduction</h2>
+            <div class="profile">
+                <img alt="Profile Picture" src="myself.jpg"/>
+                <div>
+                    <h2>Good day!</h2>
+                    <p>My Name is Kim Arthur G. Borce, you can call me Kim. I'm a college student studying in Laguna Polytechnic University. I love music, photography, and life.</p>
+                </div>
+            </div>
+        </section>
+        <section id="attainments">
+            <h2 class="section-title">Attainments</h2>
+            <ul class="list-disc pl-5">
+                <li>Currently Studying Information Technology at LSPU-San Pablo City Campus</li>
+                <li>Graduated Senior High School under the Information Communications Technology Strand at LSPU-SPCC</li>
+                <li>Graduated Junior High School at San Jose National High School</li>
+                <li>A Full-Time Pioneer/Bible Teacher as a Jehovah's Witness</li>
+                <li>Musician/Guitar Teacher</li>
+                <li>I can bake cookies</li>
+            </ul>
+        </section>
+        <section id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="grid">
+                <a href="https://www.instagram.com/arthrbrce_music/" class="card">
+                    <img alt="Screenshot of Kim's music page" src="IG.png"/>
+                    <h3>Instagram Music Page</h3>
+                    <p>I make music covers for fun!</p>
+                </a>
+                <a href="https://www.youtube.com/watch?v=NTUHtseBT3s&t=195s" class="card">
+                    <img alt="Screenshot of Kim's Documentary" src="SPC.png"/>
+                    <h3>YouTube Channel</h3>
+                    <p>Made a Short Documentary About San Pablo City</p>
+                </a>
+                <a href="https://www.deviantart.com/totallydown" class="card">
+                    <img alt="Screenshot of Kim's IG" src="Totally Down.png"/>
+                    <h3>Totally Down Photography</h3>
+                    <p>My DeviantArt page dedicated to showcasing my different shots.</p>
+                </a>
+            </div>
+        </section>
+        <section id="highlights">
+            <h2 class="section-title">Skills</h2>
+            <ul class="list-disc pl-5">
+                <li>Beginner Level Programming</li>
+                <li>Singer/Songwriter</li>
+                <li>Graphics/UI Designer</li>
+                <li>Part-time Teacher</li>
+            </ul>
+        </section>
+        <section id="blog">
+            <h2 class="section-title">Comments</h2>
+            <div class="blog-posts"></div>
+            <h2 class="section-title mt-8">Add a New Comment</h2>
+            <form id="addBlogForm" class="mb-4">
+                <div class="mb-4">
+                    <label for="blogTitle" class="block text-sm font-bold mb-2">Title:</label>
+                    <input type="text" id="blogTitle" class="border rounded w-full py-2 px-3" placeholder="Enter blog title" required />
+                </div>
+                <div class="mb-4">
+                    <label for="blogDate" class="block text-sm font-bold mb-2">Publication Date:</label>
+                    <input type="date" id="blogDate" class="border rounded w-full py-2 px-3" required />
+                </div>
+                <div class="mb-4">
+                    <label for="blogContent" class="block text-sm font-bold mb-2">Content:</label>
+                    <textarea id="blogContent" class="border rounded w-full py-2 px-3" rows="4" placeholder="Enter blog content" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded">Add Comment</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 Kim Arthur G. Borce. All rights reserved.</p>
+    </footer>
+    <script>
+      const blogPostsContainer = document.querySelector('.blog-posts');
+
+function loadComments() {
+    const comments = JSON.parse(localStorage.getItem('comments')) || [];
+    comments.forEach(comment => {
+        addCommentToDOM(comment);
+    });
+}
+
+function addCommentToDOM(comment) {
+    const newPost = document.createElement('div');
+    newPost.classList.add('card', 'mb-4');
+    newPost.innerHTML = `
+        <h3 class="text-xl font-bold">${comment.title}</h3>
+        <p>Published on ${comment.date}</p>
+        <p>${comment.content}</p>
+        <div class="button-container">
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+        </div>
+    `;
+    blogPostsContainer.prepend(newPost);
+    attachEventHandlers(newPost, comment);
+}
+
+document.getElementById('addBlogForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const title = document.getElementById('blogTitle').value;
+    const date = document.getElementById('blogDate').value;
+    const content = document.getElementById('blogContent').value;
+
+    const comment = { title, date, content };
+    const comments = JSON.parse(localStorage.getItem('comments')) || [];
+    comments.push(comment);
+    localStorage.setItem('comments', JSON.stringify(comments));
+
+    addCommentToDOM(comment);
+    document.getElementById('addBlogForm').reset();
+});
+
+function attachEventHandlers(postElement, comment) {
+    const editButton = postElement.querySelector('.edit-btn');
+    const deleteButton = postElement.querySelector('.delete-btn');
+
+    editButton.addEventListener('click', function() {
+        document.getElementById('blogTitle').value = comment.title;
+        document.getElementById('blogDate').value = comment.date;
+        document.getElementById('blogContent').value = comment.content;
+
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        const updatedComments = comments.filter(c => c.title !== comment.title || c.date !== comment.date || c.content !== comment.content);
+        localStorage.setItem('comments', JSON.stringify(updatedComments));
+        postElement.remove();
+    });
+
+    deleteButton.addEventListener('click', function() {
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        const updatedComments = comments.filter(c => c.title !== comment.title || c.date !== comment.date || c.content !== comment.content);
+        localStorage.setItem('comments', JSON.stringify(updatedComments));
+        postElement.remove();
+    });
+}
+
+loadComments();
+    </script>
+</body>
+</html>
